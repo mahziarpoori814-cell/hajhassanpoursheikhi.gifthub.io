@@ -322,8 +322,7 @@
     document.getElementById('phoneInput').value = state.phone;
     document.getElementById('headerCallText').textContent = 'تماس بگیرید';
     document.getElementById('headerCallBtn').setAttribute('href', 'tel:' + state.phone);
-    document.getElementById('footerText').textContent = '© تمامی حقوق برای ' + state.shopName + ' محفوظ است';
-
+document.getElementById('footerText').innerHTML = '© تمامی حقوق برای ' + state.shopName + ' محفوظ است<br><a href="https://www.instagram.com/poursheikhi_sleep/" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin-top:8px;color:var(--clay-deep);font-weight:600;opacity:1;">اینستاگرام: @poursheikhi_sleep</a>';
     var logoImg = document.getElementById('logoImg');
     var logoPh = document.getElementById('logoPlaceholder');
     if (state.logo) {
